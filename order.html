@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>爱书网-我的订单</title>
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/common.css">
+	<link rel="stylesheet" href="style/order.css">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="style/MyTable.css">
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/MyTable.js"></script>
+	<script>
+		var data=[
+			{name:'斗罗大陆',univalent:'￥75',num:'1',user:'张三',price:'￥47.3',state:'交易成功'},
+			{name:'绝世唐门',univalent:'￥42',num:'1',user:'李四',price:'￥26.5',state:'交易成功'},
+			{name:'斗破苍穹',univalent:'￥35',num:'1',user:'张三',price:'￥22',state:'交易成功'},
+			{name:'神印王座',univalent:'￥30',num:'1',user:'张三',price:'￥25',state:'交易成功'},
+			{name:'斗罗大陆',univalent:'￥75',num:'1',user:'张三',price:'￥47.3',state:'交易成功'},
+			{name:'斗罗大陆',univalent:'￥75',num:'1',user:'张三',price:'￥47.3',state:'交易成功'},
+			{name:'斗罗大陆',univalent:'￥75',num:'1',user:'张三',price:'￥47.3',state:'交易成功'},
+			{name:'斗罗大陆',univalent:'￥75',num:'1',user:'张三',price:'￥47.3',state:'交易成功'},
+			{name:'斗罗大陆',univalent:'￥75',num:'1',user:'张三',price:'￥47.3',state:'交易成功'},
+			{name:'斗罗大陆',univalent:'￥75',num:'1',user:'张三',price:'￥47.3',state:'交易成功'},
+			{name:'斗罗大陆',univalent:'￥75',num:'1',user:'张三',price:'￥47.3',state:'交易成功'},
+			{name:'斗罗大陆',univalent:'￥75',num:'1',user:'张三',price:'￥47.3',state:'交易成功'}
+		];
+		$(function(){
+			MyTable.show({
+				titles:['宝贝','单价','数量	','收货人','金额','交易状态'],
+				data:data,
+				con:$('#container'),
+				hasCURD:true
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="top-nav">
+		<div class="login main">爱书的朋友，欢迎来爱书网！请
+			<a href="#">登录</a>免费<a href="#">注册</a>
+			<ul>
+				<li><a href="#">新手入门</a></li>
+				<li><a href="#">帮助中心</a></li>
+				<li><a href="#">客户服务</a></li>
+			</ul>
+		</div>
+	</div>
+	<header class="main">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt="爱书网"></a>
+		</div>
+		<form action="">
+			<input type="text" class="search1"><input type="submit" value="搜索" class="search2">
+		</form>
+		<ul>
+			<li><a href="#" class="buycar">购物车</a></li>
+		</ul>
+		<div class="clear"></div>
+		<div class="hot-search">热门搜索
+			<a href="#">龙王传说</a>
+			<a href="#">斗罗大陆</a>
+			<a href="#">大主宰</a>
+			<a href="#">莽荒纪</a>
+			<a href="#">完美世界</a>
+		</div>
+	</header>
+	<nav>
+		<div class="nav-left"><span>书籍分类</span>
+			<ul>
+				<li><a href="#">玄幻</a></li>
+				<li><a href="#">奇幻</a></li>
+				<li><a href="#">武侠</a></li>
+				<li><a href="#">仙侠</a></li>
+				<li><a href="#">都市</a></li>
+				<li><a href="#">职场</a></li>
+				<li><a href="#">军事</a></li>
+				<li><a href="#">历史</a></li>
+				<li><a href="#">游戏</a></li>
+				<li><a href="#">体育</a></li>
+				<li><a href="#">科幻</a></li>
+				<li><a href="#">灵异</a></li>
+				<li><a href="#">女生网</a></li>
+				<li><a href="#">二次元</a></li>
+			</ul>
+		</div>
+		<ul class="nav-right">
+			<li><a href="index.html">首页</a></li>
+			<!-- <li><a href="about.html">关于爱书</a></li> -->
+			<li><a href="order.html">我的订单</a></li>
+			<li><a href="product.html">书籍中心</a></li>
+			<li><a href="product-detail.html">商品介绍</a></li>
+			<li><a href="contact.html">联系我们</a></li>
+		</ul>
+	</nav>
+	<div class="content main">
+		<p class="location">您现在的位置:<a href="order.html">爱书网</a>&gt;&gt;我的订单</p>
+		<div class="order-title">
+			<ul>
+				<li class="curA"><a href="#">所有订单</a></li>
+				<li><a href="#">待付款</a></li>
+				<li><a href="#">待发货</a></li>
+				<li><a href="#">待收货</a></li>
+				<li><a href="#">待评价</a></li>
+			</ul>
+			<a href="#" class="order-rub">订单回收站</a>
+		</div>
+		<div id='container'>
+		</div>
+	</div>
+	<footer>
+		<div class="service"></div>
+		<div class="frend-link">
+			<em>友情链接:</em>
+			<a href="http://www.qidian.com/" target="_blank">起点中文网</a><span>|</span>
+			<a href="http://www.winxuan.com/" target="_blank">文轩网</a><span>|</span>
+			<a href="http://www.taoshu.com/" target="_blank">淘书网</a><span>|</span>
+			<a href="http://www.dangdang.com/" target="_blank">当当网</a><span>|</span>
+			<a href="http://www.b-k.com.cn/" target="_blank">中国图书网</a><span>|</span>
+			<a href="https://www.amazon.cn/" target="_blank">亚马逊</a><span>|</span>
+			<a href="http://www.kongfz.com/" target="_blank">孔子旧书网</a><span>|</span>
+			<a href="http://www.jd.com/" target="_blank">京东网</a>
+		</div>
+		<div class="copyright">
+			<p>增值电信业务经营许可证：川B2-201303340&nbsp;|&nbsp;川预审A42T-02XV-GF08-B2N0号&nbsp;|&nbsp;蜀IFP备140645037号</p>
+			<p>Copyright(C)&emsp;<a href="index.html">爱书网</a>&emsp;2000-2016&nbsp;版权所有&nbsp;|&nbsp;客服热线：400-123-1234</p>
+			<div class="safe">
+				<a href="http://www.12377.cn/"><img src="images/foot-safe-01.jpg" alt="网站备案信息"></a>
+				<a href="http://www.12377.cn/"><img src="images/foot-safe-02.jpg" alt="营业执照报备信息"></a>
+				<a href="http://www.12377.cn/"><img src="images/foot-safe-03.jpg" alt="可信网站身份验证"></a>
+				<a href="http://www.12377.cn/"><img src="images/foot-safe-04.jpg" alt="网络举报APP下载"></a>
+				<a href="http://www.12377.cn/"><img src="images/foot-safe-05.jpg" alt="中国互联网违法和不良信息举报中心"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

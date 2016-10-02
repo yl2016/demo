@@ -1,0 +1,87 @@
+nav .nav-left ul {
+	display: none;
+}
+nav .nav-left:hover ul {
+	display: block;
+}
+nav a[href="contact.html"],
+nav a[href="contact.html"]:hover {
+	color: #ea5520;
+	background-color: rgba(76,76,255,0.5);
+}
+
+.content {
+	margin-top: 20px;
+}
+.content h1 em {
+	margin-right: 20px;
+	font-size: 25px;
+}
+.usInfo {
+	margin-top: 10px;
+	overflow: hidden;
+}
+.usInfo li {
+	float: left;
+	margin-bottom: 20px;
+	width: 50%;
+	font-size: 18px;
+}
+.usInfo li h2 {
+	margin-bottom: 10px;
+}
+#container {
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 400px;
+	box-sizing: border-box;
+	border: 5px solid #32afff;
+}
+.title {
+	padding: 5px;
+	background: #32afff;
+	color: #fff;
+}
+.local {
+	padding: 10px 5px;
+}
+.userInfo {
+	float: left;
+	margin-left: 40px;
+	padding: 20px;
+	width: 400px;
+	height: 400px;
+	box-sizing: border-box;
+	border: 2px solid #32afff;
+}
+.userInfo li {
+	margin-top: 10px;
+	font-size: 20px;
+}
+.userInfo input[type="text"],
+.userInfo input[type="password"],
+.userInfo input[type="email"],
+.userInfo textarea {
+	width: 236px;
+	border: 1px solid #ccc;
+}
+.userInfo input[type="submit"],
+.userInfo input[type="reset"] {
+	width: 60px;
+	margin-right: 20px;
+	margin-top: 20px;
+	color: #fff;
+	background-color: #ea5520;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+.userInfo a {
+	color: #32afff;
+}
+.userInfo a:hover {
+	color: #ea5520;
+	text-decoration: underline;
+
+}

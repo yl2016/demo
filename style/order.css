@@ -1,0 +1,51 @@
+nav .nav-left ul {
+	display: none;
+}
+nav .nav-left:hover ul {
+	display: block;
+}
+nav a[href="order.html"],
+nav a[href="order.html"]:hover {
+	color: #ea5520;
+	background-color: rgba(76,76,255,0.5);
+}
+
+.content {
+	margin-top: 20px;
+	background-color: #fff;
+}
+.order-title {
+	overflow: hidden;
+	border-bottom: 2px solid #ececec;
+}
+.order-title ul {
+	
+	float: left;
+	width: 80%;
+}
+.order-title ul li{
+	float: left;
+	width: 130px;
+	height: 40px;
+	text-align: center;
+}
+.order-title ul li a {
+	font-size: 20px;
+	color: #333;
+	font-weight: bold;
+}
+.order-title ul .curA a {
+	color: #ea5520;
+}
+.order-title ul li a:hover,
+.order-rub:hover {
+	color: #ea5520;
+}
+.order-rub {
+	float: right;
+	width: 20%;
+	color: #333;
+}
+#container {
+	margin-top: 20px;
+}

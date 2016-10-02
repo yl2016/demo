@@ -1,0 +1,182 @@
+nav .nav-left ul {
+	display: none;
+}
+nav .nav-left:hover ul {
+	display: block;
+}
+nav a[href="product.html"],
+nav a[href="product.html"]:hover {
+	color: #ea5520;
+	background-color: rgba(76,76,255,0.5);
+}
+.content {
+	margin-top: 20px;
+}
+.content,
+.content-left ul {
+	overflow: hidden;
+}
+.content-left{
+	float: left;
+	width: 280px;
+}
+.content-left h2 {
+	color: #333;
+	margin-bottom: 10px;
+}
+.content-left a {
+	display: inline-block;
+	padding: 5px;
+	color: #333;
+}
+.content-left a:hover,
+.rank-title-left a:hover {
+	color: #ea5520;
+}
+.content-left ul li {
+	float: left;
+	margin-right: 10px;
+}
+.selected,
+.type,
+.words-num,
+.tag {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.selected,
+.type,
+.words-num {
+	border-bottom: 1px solid #ccc;
+}
+.content-left .text-cur {
+	background-color: #ea5520;
+	color: #fff;
+}
+.content-left .text-cur:hover {
+	color:#fff;
+}
+.content-right {
+	float: left;
+	width: 924px;
+	margin-left: 20px;
+}
+.rank-title {
+	width: 100%;
+	height: 60px;
+	background-color: #ececec;
+}
+.rank-title-left {
+	float: left;
+	margin-left: 10px;
+}
+.rank-title-left a {
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	margin-top: 20px;
+	color: #32afff;
+}
+.rank-title-left  .icon-arrow-down{
+	margin-left: 3px;
+}
+.rank-title-right {
+	float: right;
+}
+.rank-title-right span {
+	line-height: 60px;
+	margin-right: 10px;
+}
+.rank-title-right span em {
+	color: #ea5520;
+}
+.rank-content ul {
+	width: 100%;
+	height: 150px;
+	margin-top: 20px;
+	border-bottom:1px solid #ccc;
+}
+.rank-content ul li {
+	float: left;
+	width: 50%;
+}
+.book-img {
+	float: left;
+	width: 100px;
+	height: 133px;
+	margin-right: 10px;
+	overflow: hidden;
+	transition: box-shadow 0.4s;
+}
+.book-img:hover {
+	box-shadow: 0 2px 6px rgba(0,0,0,.75);
+}
+.book-img:hover img {
+	transform: scale(1.1);
+}
+.book-img img {
+	width: 100%;
+	transition: transform 0.4s;
+}
+.book-info {
+	float: left;
+}
+.book-info h3 a {
+	font-size: 16px;
+	color: #333;
+}
+.book-info h3 a:hover {
+	color: #ea5520;
+}
+.author {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.author a,
+.author span {
+	color: #ccc;
+}
+.author a:hover {
+	color: #ea5520;
+}
+.author span {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.intro {
+	width: 330px;
+	height:40px;
+	color: #333;
+	line-height: 20px;
+	overflow: hidden;
+}
+.update {
+	display: inline-block;
+	margin-top: 20px;
+	color: #ccc;
+}
+.price {
+	margin-left: 20px;
+	color: #ccc;
+}
+.pagebox {
+	margin-top: 30px;
+}
+.pagebox ul {
+	float: right;
+}
+.pagebox ul li {
+	float: left;
+	width: 40px;
+	height: 20px;
+}
+.pagebox ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #333;
+	font-weight: bold;
+}
+.pagebox ul li a:hover {
+	color: #ea5520;
+}

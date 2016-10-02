@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>爱书网-详细介绍</title>
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/common.css">
+	<link rel="stylesheet" href="style/product-detail.css">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/Popt.js"></script>
+	<script src="scripts/cityJson.js"></script>
+	<script src="scripts/citySet.js"></script>
+	<script type="text/javascript">
+		function showPic() {
+			var pic = [
+				"images/book-img-1.jpg",
+				"images/book-img-2.jpg",
+				"images/book-img-3.jpg",
+				"images/book-img-4.jpg"
+			];
+			var $img = $(".product-intro-img img");
+			$(".preview ul a").each(function(i, v) {
+				$(v).mouseover(function() {
+					$img.attr("src", pic[i]);
+				});
+			});
+		}
+		function showPrice() {
+			var $num = $(".num span").text();
+			var val = $(".num input").val();
+			if(val == 0) return;
+			$(".minus").click(function() {
+				val -= 1;
+				$(".num input").val(val);
+				$(".num span").text("￥"+(val*27.5));
+			});
+			$(".add").click(function() {
+				val += 1;
+				$(".num input").val(val);
+				$(".num span").text("￥"+(val*27.5));
+			});
+		}
+		function showContent() {
+			$(".product-detail-title li").each(function(i, v) {
+				$(v).click(function() {
+					$(this).addClass("title-cur").siblings().removeClass("title-cur");
+					$($(".product-detail-content")[i]).addClass("disapper").siblings().removeClass("disapper");
+				});
+			});
+		}
+		function showMore() {
+			$(".show-more a").click(function() {
+				$(".list p").height(780);
+				$(this).text("收起全部↑").click(function() {
+					$(".list p").height(300);
+					$(this).text("查看全部↓");
+				});
+			});
+		}
+		$(function() {
+			showPic();
+			showPrice();
+			showContent();
+			showMore();
+			$("#city").click(function (e) {
+				SelCity(this,e);
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="top-nav">
+		<div class="login main">爱书的朋友，欢迎来爱书网！请
+			<a href="#">登录</a>免费<a href="#">注册</a>
+			<ul>
+				<li><a href="#">新手入门</a></li>
+				<li><a href="#">帮助中心</a></li>
+				<li><a href="#">客户服务</a></li>
+			</ul>
+		</div>
+	</div>
+	<header class="main">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt="爱书网"></a>
+		</div>
+		<form action="">
+			<input type="text" class="search1"><input type="submit" value="搜索" class="search2">
+		</form>
+		<ul>
+			<li><a href="#" class="buycar">购物车</a></li>
+		</ul>
+		<div class="clear"></div>
+		<div class="hot-search">热门搜索
+			<a href="#">龙王传说</a>
+			<a href="#">斗罗大陆</a>
+			<a href="#">大主宰</a>
+			<a href="#">莽荒纪</a>
+			<a href="#">完美世界</a>
+		</div>
+	</header>
+	<nav>
+		<div class="nav-left"><span>书籍分类</span>
+			<ul>
+				<li><a href="#">玄幻</a></li>
+				<li><a href="#">奇幻</a></li>
+				<li><a href="#">武侠</a></li>
+				<li><a href="#">仙侠</a></li>
+				<li><a href="#">都市</a></li>
+				<li><a href="#">职场</a></li>
+				<li><a href="#">军事</a></li>
+				<li><a href="#">历史</a></li>
+				<li><a href="#">游戏</a></li>
+				<li><a href="#">体育</a></li>
+				<li><a href="#">科幻</a></li>
+				<li><a href="#">灵异</a></li>
+				<li><a href="#">女生网</a></li>
+				<li><a href="#">二次元</a></li>
+			</ul>
+		</div>
+		<ul class="nav-right">
+			<li><a href="index.html">首页</a></li>
+			<!-- <li><a href="about.html">关于爱书</a></li> -->
+			<li><a href="order.html">我的订单</a></li>
+			<li><a href="product.html">书籍中心</a></li>
+			<li><a href="product-detail.html">商品介绍</a></li>
+			<li><a href="contact.html">联系我们</a></li>
+		</ul>
+	</nav>
+	<div class="content main">
+		<p class="location">您现在的位置:<a href="index.html">爱书网</a>&gt;&gt;商品介绍</p>
+		<div class="product-intro">
+			<div class="preview">
+				<div class="product-intro-img">
+					<img src="images/book-img-1.jpg" alt="">
+				</div>
+				<div>
+					<ul>
+						<li><a href="javascript:void(0)"><img src="images/book-img-small-1.jpg" alt=""></a></li>
+						<li><a href="javascript:void(0)"><img src="images/book-img-small-2.jpg" alt=""></a></li>
+						<li><a href="javascript:void(0)"><img src="images/book-img-small-3.jpg" alt=""></a></li>
+						<li><a href="javascript:void(0)"><img src="images/book-img-small-4.jpg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="item-inner">
+				<div class="name">
+					<h1>翻译官（京东专供十周年纪念签章本 杨幂黄轩主演影视剧热播中）</h1>
+					<p>如果爱情是这世上难懂的语言，我愿成为你的翻译官。纪念面市十周年，新增万字未公开番外。年度广受关注的IP原著！让1,000,000读者立志成为翻译官的爱情小说。</p>
+					<div class="author-name"><a href="#">缪娟</a>著</div>
+				</div>
+				<div class="summary">
+					<ul>
+						<li>定&emsp;&emsp;价：<span>￥39.80</span></li>
+						<li class="price">爱书&emsp;价：<span>￥27.5</span>[7折]&emsp;<a href="#">(降价通知)</a></li>
+						<li>促销信息：<span>满减 满100.00减30.00 </span><a href="#">详情&gt;&gt;</a></li>
+						<li class="addr">配送&emsp;至：<input type="text" id="city"></li>
+						<li>服&emsp;&emsp;务：由 爱书 发货，并提供售后服务。</li>
+						<li class="num">购买数量：
+							<a href="javascript:void(0)" class="minus">-</a>
+							<input type="text" value="1">
+							<a href="javascript:void(0)" class="add">+</a><span>￥27.5</span>
+						</li>
+						<li class="btn"><a href="#">加入购物车</a></li>
+						<li>温馨提示：支持7天无理由退货</li>
+					</ul>
+					<div></div>
+				</div>
+			</div>
+		</div>
+		<div class="hot-product">
+			<h2><a href="#">热门单品</a href="#"></h2>
+			<ul>
+				<li>
+					<a href="#" class="hot-product-img"><img src="images/hot-product-01.png" alt="再嫁侯门"></a>
+					<a href="#" class="hot-product-name">再嫁侯门</a>
+					<span>￥38.90</span>
+				</li>
+				<li>
+					<a href="#" class="hot-product-img"><img src="images/hot-product-02.png" alt="谁的青春不迷茫"></a>
+					<a href="#" class="hot-product-name">谁的青春不迷茫　[荐书联盟推荐]</a>
+					<span>￥22.10</span>
+				</li>
+				<li>
+					<a href="#" class="hot-product-img"><img src="images/hot-product-03.png" alt="致命邂逅"></a>
+					<a href="#" class="hot-product-name">致命邂逅（完美珍藏版）</a>
+					<span>￥18.40</span>
+				</li>
+				<li>
+					<a href="#" class="hot-product-img"><img src="images/hot-product-04.png" alt="最好的我们"></a>
+					<a href="#" class="hot-product-name">最好的我们（刘昊然谭松韵主演热播影视剧同</a>
+					<span>￥37.80</span>
+				</li>
+				<li>
+					<a href="#" class="hot-product-img"><img src="images/hot-product-05.png" alt="做一个刚刚好的女子"></a>
+					<a href="#" class="hot-product-name">做一个刚刚好的女子：不攀附，不将就</a>
+					<span>￥23.20</span>
+				</li>
+				<li>
+					<a href="#" class="hot-product-img"><img src="images/hot-product-06.png" alt="岛上书店"></a>
+					<a href="#" class="hot-product-name">岛上书店　【荐书联盟推荐】</a>
+					<span>￥24.10</span>
+				</li>
+			</ul>
+		</div>
+		<div class="product-detil-intro">
+			<div class="product-other">
+				<div class="product-other-1">
+					<h4>相关分类</h4>
+					<ul>
+						<li><a href="#">校园</a></li>
+						<li><a href="#">爱情/情感</a></li>
+						<li><a href="#">古代言情</a></li>
+						<li><a href="#">叛逆/成长</a></li>
+						<li><a href="#">悬疑/惊悚</a></li>
+						<li><a href="#">娱乐/偶像</a></li>
+						<li><a href="#">爆笑/无厘头</a></li>
+						<li><a href="#">玄幻/科幻</a></li>
+						<li><a href="#">大陆原创</a></li>
+						<li><a href="#">港台青春文学</a></li>
+						<li><a href="#">韩国青春文学</a></li>
+						<li><a href="#">其他国外青春文</a></li>
+					</ul>
+				</div>
+				<div class="product-other-2">
+					<h4>达人选购</h4>
+					<ul>
+						<li>
+							<a href="#"><img src="images/product-other-01.png" alt="欢乐颂"></a>
+							<a href="#">欢乐颂·典藏版 （套装全3册）</a>
+							<span>￥68.60</span>
+						</li>
+						<li>
+							<a href="#"><img src="images/product-other-02.png" alt="玛格丽特小镇"></a>
+							<a href="#">玛格丽特小镇</a>
+							<span>￥25.20</span>
+						</li>
+						<li>
+							<a href="#"><img src="images/product-other-03.png" alt="暗恋·橘生淮南"></a>
+							<a href="#">暗恋·橘生淮南（套装全2册）</a>
+							<span>￥39.90</span>
+						</li>
+						<li>
+							<a href="#"><img src="images/product-other-04.png" alt="余罪"></a>
+							<a href="#">余罪：我的刑侦笔记（同名网剧点击量破40亿！小说剧情完爆网剧！）</a>
+							<span>￥22.40</span>
+						</li>
+						<li>
+							<a href="#"><img src="images/product-other-05.png" alt="从你的全世界路过"></a>
+							<a href="#">从你的全世界路过</a>
+							<span>￥24.80</span>
+						</li>
+						<li>
+							<a href="#"><img src="images/product-other-06.png" alt="不忘初心，方得始终"></a>
+							<a href="#">不忘初心，方得始终</a>
+							<span>￥22.60</span>
+						</li>
+						<li>
+							<a href="#"><img src="images/product-other-07.png" alt="摆渡人"></a>
+							<a href="#">摆渡人　【荐书联盟推荐】</a>
+							<span>￥23.40</span>
+						</li>
+						<li class="last">
+							<a href="#"><img src="images/product-other-08.png" alt="不畏将来·不念过去"></a>
+							<a href="#">不畏将来·不念过去</a>
+							<span>￥21.10</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="product-detail">
+				<div class="product-detail-title">
+					<ul>
+						<li class="title-cur"><a href="javascript:void(0)">商品介绍</a></li>
+						<li><a href="javascript:void(0)">精彩书评</a></li>
+					</ul>
+				</div>
+				<div class="product-detail-content disapper">
+					<ul>
+						<li>出版社：<a href="#">江苏凤凰文艺出版社</a></li>
+						<li>ISBN：9787539992822</li>
+						<li>版次：1</li>
+						<li>商品编码：11921227</li>
+						<li>品牌：<a href="#">读客</a></li>
+						<li>包装：平装</li>
+						<li>开本：32开</li>
+						<li>出版时间：2016-06-01</li>
+						<li>用纸：轻型纸</li>
+						<li>页数：408</li>
+						<li>字数：370000</li>
+					</ul>
+				</div>
+				<div class="product-detail-content">
+					<p>杨幂坚强大气，黄轩文雅有书卷气，两人像极了原著小说里的乔菲和程家阳。<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——新华网</p>
+					<p>这是一部简单清新的青春小说，行文利落而有余韵，故事的推进节奏恰到好处。好的故事是一部长篇小说的灵魂。我真心赞赏作者编故事的才华。<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——著名作家、编剧海岩</p>
+					<p>缪娟的笔仿佛有魔力，将爱的香艳与爱不起的无奈写到极深，他们爱的过程没有“撕裂”的情节，也能达到的裂心的感觉，深深的爱带来的痛，没有虐身，却虐心。<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——著名书评人刘圈点绕</p>
+				</div>
+			</div>			
+			
+			<div class="tab"><h3>内容简介</h3></div>
+			<div class="text-words">
+				<p>她，倔强、乐观、独立。出身低微，饱受磨难与非议，却从来不曾放弃心中的梦想。</p>
+				<p>他，温柔、多情、才华横溢。身处高位，却有着不可言说的孤独及无处安放的追求。</p>
+				<p>当命运安排他们相遇，难测的社会与人生中，他们能否读懂彼此，读懂爱情？</p>
+			</div>
+			<div class="tab"><h3>作者简介</h3></div>
+			<div class="text-words">
+				<p>缪娟，生于80年代，天蝎座，沈阳人。喜欢雪后高山和夜色中的海。</p>
+				<p>原为专业法文翻译。现在阿尔卑斯小城生活，勤奋地书写青春。讲故事的过程中，流泪，笑。这样拒绝成熟，固执年少。</p>
+				<p>多部作品正被改编成影视剧。代表作《翻译官》《智斗》《堕落天使》《我的波塞冬》《丹尼海格》等。</p>
+			</div>
+			<div class="tab"><h3>目录</h3></div>
+			<div class="text-words list">
+				<p>
+					Chapter&emsp;1&emsp;初见<br>
+					Chapter&emsp;2&emsp;未知一吻<br>
+					Chapter&emsp;3&emsp;倾城一遇<br>
+					Chapter&emsp;4&emsp;菲的家世<br>
+					Chapter&emsp;5&emsp;热恋<br>
+					Chapter&emsp;6&emsp;大连之行<br>
+					Chapter&emsp;7&emsp;初遇小华<br>
+					Chapter&emsp;8&emsp;买衣之争<br>
+					Chapter&emsp;9&emsp;程家阳<br>
+					Chapter&emsp;10&emsp;旭东嘉怡<br>
+					Chapter&emsp;11&emsp;致命传真<br>
+					Chapter&emsp;12&emsp;离别<br>
+					Chapter&emsp;13&emsp;新的生活<br>
+					Chapter&emsp;14&emsp;祖祖、小华<br>
+					Chapter&emsp;15&emsp;巴黎一会<br>
+					Chapter&emsp;16&emsp;亲爱的祖祖<br>
+					Chapter&emsp;17&emsp;归国<br>
+					Chapter&emsp;18&emsp;火灾<br>
+					Chapter&emsp;19&emsp;争吵<br>
+					Chapter&emsp;20&emsp;程家明<br>
+					Chapter&emsp;21&emsp;婚讯<br>
+					Chapter&emsp;22&emsp;我和乔菲<br>
+					Chapter&emsp;23&emsp;归家<br>
+					Chapter&emsp;24&emsp;惊险之旅<br>
+					尾声 我爱你<br>
+					番外篇 少爷的磨难
+				</p>
+				<div class="show-more"><a href="javascript:void(0)">查看全部↓</a></div>
+			</div>
+			<div class="large-img"><img src="images/large-img.jpg" alt=""></div>
+		</div>
+	</div>
+	<footer>
+		<div class="service"></div>
+		<div class="frend-link">
+			<em>友情链接:</em>
+			<a href="http://www.qidian.com/" target="_blank">起点中文网</a><span>|</span>
+			<a href="http://www.winxuan.com/" target="_blank">文轩网</a><span>|</span>
+			<a href="http://www.taoshu.com/" target="_blank">淘书网</a><span>|</span>
+			<a href="http://www.dangdang.com/" target="_blank">当当网</a><span>|</span>
+			<a href="http://www.b-k.com.cn/" target="_blank">中国图书网</a><span>|</span>
+			<a href="https://www.amazon.cn/" target="_blank">亚马逊</a><span>|</span>
+			<a href="http://www.kongfz.com/" target="_blank">孔子旧书网</a><span>|</span>
+			<a href="http://www.jd.com/" target="_blank">京东网</a>
+		</div>
+		<div class="copyright">
+			<p>增值电信业务经营许可证：川B2-201303340&nbsp;|&nbsp;川预审A42T-02XV-GF08-B2N0号&nbsp;|&nbsp;蜀IFP备140645037号</p>
+			<p>Copyright(C)&emsp;<a href="index.html">爱书网</a>&emsp;2000-2016&nbsp;版权所有&nbsp;|&nbsp;客服热线：400-123-1234</p>
+			<div class="safe">
+				<a href="http://www.12377.cn/"><img src="images/foot-safe-01.jpg" alt="网站备案信息"></a>
+				<a href="http://www.12377.cn/"><img src="images/foot-safe-02.jpg" alt="营业执照报备信息"></a>
+				<a href="http://www.12377.cn/"><img src="images/foot-safe-03.jpg" alt="可信网站身份验证"></a>
+				<a href="http://www.12377.cn/"><img src="images/foot-safe-04.jpg" alt="网络举报APP下载"></a>
+				<a href="http://www.12377.cn/"><img src="images/foot-safe-05.jpg" alt="中国互联网违法和不良信息举报中心"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.MyTable{
+	border-collapse: collapse;
+}
+.MyTable thead tr{
+	background-color:#ececec;
+	font-weight:bolder;
+	color:#ea5520;
+}
+.MyTable thead tr td{
+	width:150px;
+}
+
+.MyTable td{
+	width:100px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+}
+.MyTable .time{
+	display: block;
+	margin-left:20px;
+	height:30px;
+	font-size: 16px;
+}
+.MyTable tbody td:nth-child(1){
+	width:350px;
+}
+.MyTable .tbody td {
+	height: 140px;
+	line-height: 140px;
+	border:1px solid #ccc;
+}
+.MyTable a{
+	margin-right:10px;
+}
+.MyTable input{
+	width:80px;
+}
+.MyTable .pic{
+	float:left;
+	margin-left: 20px;
+	margin-top:20px;
+	width: 100px;
+	height:100px;
+}
+.MyTable .pic img{
+	width:100%;
+}

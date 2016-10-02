@@ -1,0 +1,237 @@
+@font-face {
+	font-family:"icomoon";
+	src: url("../fonts/icomoon.eot?");
+	src: url("../fonts/icomoon.eot?") format("embedded-opentype"),
+		 url("../fonts/icomoon.svg") format("svg"),
+		 url("../fonts/icomoon.ttf") format("truetype"),
+		 url("../fonts/icomoon.woff") format("woff");
+}
+[class^="icon-"],
+[class*=" icon-"]  {
+	font-family: "icomoon";
+	-moz-osx-font-smoothing: grayscale;
+	 -webkit-font-smoothing: antialiased;
+}
+body {
+	background-color:#f9fbfa;
+}
+.main {
+	width:1224px;
+	margin:0 auto;
+}
+.top-nav {
+	background-color: #ececec;
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid #ccc;
+	transition: all 0.4s linear;
+}
+.login {
+	line-height: 30px;
+}
+.login a {
+	color: #333;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.login a:hover {
+	color: #ea5520;
+}
+.login ul {
+	float: right;
+}
+.login ul li {
+	float: left;
+	margin-left: 20px;
+}
+header {
+	height:100px;
+	position:relative;
+}
+header .logo,
+header .hidden-logo,
+header form,
+header ul li {
+	float:left;
+}
+header .logo {
+	margin:25px 15% 0 1%;
+}
+header form {
+	margin-top:30px;
+}
+header form .search1 {
+	width:250px;
+	height:30px;
+	border-color:#32afff;
+	border-right:0;
+	background-color:#f9fbfa;
+}
+header form .search2 {
+	width:50px;
+	height:34px;
+	border:none;
+	background-color:#32afff;
+	cursor:pointer;
+	color:#fff;
+}
+header ul {
+	margin-top:35px;
+	float:right;
+}
+header ul li a {
+	font-size:20px;
+	padding:15px 20px 15px 50px;
+	color:#32afff;
+	border:1px solid #32afff;
+	background:left center no-repeat;
+}
+header ul .buycar {
+	background-image:url(../images/buy-01.png);
+}
+header ul li a:hover {
+	color:#fff;
+	border:1px solid #32afff;
+	background-color:#32afff;
+}
+header ul li .buycar:hover {
+	background-image:url(../images/buy-02.png);
+}
+header .hot-search {
+	position:absolute;
+	bottom:10px;
+	left:28%;
+}
+header .hot-search a {
+	color:#f00;
+}
+
+nav {
+	width:100%;
+	background-color:#32afff;
+}
+.nav-right {
+	overflow:hidden;
+}
+.nav-left {
+	position:relative;
+	margin-left:63px;
+	margin-right:70px;
+}
+nav ul li,
+.nav-left {
+	float:left;
+}
+nav ul li a,
+.nav-left span {
+	font-size:20px;
+	font-weight:bold;
+	color:#fff;
+	display:inline-block;
+}
+.nav-right li a {
+	padding:10px 20px;
+}
+.nav-left span {
+	padding:10px 100px;
+	background-color:rgba(76,76,255,0.5);
+}
+nav ul li a:hover {
+	color:#ea5520;
+}
+.nav-right li a:hover {
+	background-color:rgba(70,100,255,0.5);
+}
+.nav-left ul {
+	position:absolute;
+	width:100%;
+	left:0;
+	top:100%;
+	background-color:rgba(50,175,255,0.5);
+	z-index:3;
+} 
+.nav-left ul li {
+	width:50%;
+	text-align:center;
+}
+.nav-left ul li a {
+	width:100%;
+	padding:11px 0;
+	font-size:16px;
+	z-index:4;
+	position:relative;
+}
+.nav-left ul li a::after {
+	content:"";
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	border-radius:100%;
+	transform:scale(0);
+	transform-origin:center;
+	background-color:rgba(76,76,255,0.8);
+	transition:transform 0.4s;
+	z-index:-1;
+}
+.nav-left ul li a:hover::after {
+	transform:scale(1);
+}
+
+.location {
+	padding-left: 5px;
+	margin-bottom: 10px;
+}
+.location a {
+	color: #32afff;
+}
+.location a:hover {
+	color: #ea5520;
+	text-decoration: underline;
+}
+
+footer .service {
+	width:100%;
+	margin-top:20px;
+	height:100px;
+	background-image:url(../images/foot-service-bg.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-color:#ececec;
+}
+footer .frend-link {
+	text-align:center;
+	font-size:14px;
+	margin-top:20px;
+}
+footer .frend-link em {
+	margin-right:10px;
+}
+footer .frend-link a,footer .copyright a {
+	color:#666666;
+}
+footer .frend-link a:hover,
+footer .copyright a:hover {
+	color:#32afff;
+	text-decoration:underline;
+}
+footer .frend-link span {
+	margin-left:10px;
+	margin-right:10px;
+}
+footer .copyright p {
+	text-align:center;
+	color:#666666;
+	margin-top:10px;
+}
+footer .copyright .safe {
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+footer .copyright .safe a {
+	display:inline-block;
+	margin-right:10px;
+	border:2px solid #ededed;
+}

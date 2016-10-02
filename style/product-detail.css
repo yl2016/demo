@@ -1,0 +1,375 @@
+nav .nav-left ul {
+	display: none;
+}
+nav .nav-left:hover ul {
+	display: block;
+}
+nav a[href="product-detail.html"],
+nav a[href="product-detail.html"]:hover {
+	color: #ea5520;
+	background-color: rgba(76,76,255,0.5);
+}
+
+.content {
+	margin-top: 20px;
+}
+.product-intro {
+	border: 1px solid #ccc;
+	overflow: hidden;
+	padding-bottom:10px;
+}
+.preview,
+.item-inner {
+	float: left;
+	margin-top: 10px;
+}
+.preview {
+	width: 350px;
+	height: 420px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.preview ul {
+	margin-top: 10px;
+	overflow: hidden;
+}
+.preview ul li {
+	float: left;
+	margin-left: 15px;
+	width: 58px;
+	height: 58px;
+	box-sizing: border-box;
+}
+.preview ul li img {
+	display: block;
+}
+.preview ul li:hover {
+	border: 2px solid #32afff;
+}
+.item-inner {
+	width: 832px;
+	box-sizing: border-box;
+	padding-right: 20px;
+}
+.name h1 {
+	font-size: 20px;
+	color: #333;
+}
+.name p {
+	color: #ea5520;
+	width: 610px;
+	font-size: 16px;
+}
+.author-name {
+	margin-top: 20px;
+	font-size: 14px;
+}
+.author-name a {
+	margin-right: 1em;
+}
+.summary ul li {
+	margin-top: 15px;
+}
+.summary .price span {
+	font-size: 25px;
+	font-weight: bold;
+}
+.summary ul li span {
+	color:#ea5520;
+	margin-right: 5px;
+}
+._citys { 
+	width: 450px; 
+	display: inline-block; 
+	border: 2px solid #eee;
+	position: relative; 
+}
+._citys span { 
+	color: #56b4f8; 
+	height: 15px; 
+	width: 15px; 
+	line-height: 15px; 
+	text-align: center; 
+	border-radius: 3px; 
+	position: absolute; 
+	right: 10px; 
+	top: 10px; 
+	border: 1px solid #56b4f8; 
+	cursor: pointer; 
+}
+._citys0 { 
+	width: 100%; 
+	height: 34px; 
+	display: inline-block; 
+	border-bottom: 2px solid #56b4f8; 
+	padding: 0; 
+	margin: 0; 
+	background-color: #f5f5f5; 
+}
+._citys0 li { 
+	display: inline-block; 
+	line-height: 34px; 
+	font-size: 15px; 
+	color: #888; 
+	width: 80px; 
+	text-align: center; 
+	cursor: pointer; 
+}
+.citySel { 
+	background-color: #56b4f8; 
+	color: #fff !important; 
+}
+._citys1 { 
+	width: 100%; 
+	display: inline-block; 
+	padding-top: 10px;
+	background-color: #f5f5f5;
+}
+._citys1 a { 
+	width: 83px; 
+	height: 35px; 
+	display: inline-block; 
+	background-color: #f5f5f5; 
+	color: #666; 
+	margin-left: 6px; 
+	margin-top: 3px; 
+	line-height: 35px; 
+	text-align: center; 
+	cursor: pointer; 
+	font-size: 13px; 
+	overflow: hidden; 
+}
+._citys1 a:hover { 
+	color: #fff; 
+	background-color: #56b4f8; 
+}
+.AreaS { 
+	background-color: #56b4f8 !important; 
+	color: #fff !important; 
+}
+.summary .num a {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	font-weight: bold;
+	color: #333;
+	border: 1px solid #ccc;
+}
+.summary .num input {
+	width: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+}
+.summary .num span {
+	margin-left: 10px;
+}
+.summary .btn a {
+	display: block;
+	width: 130px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #ea5520;
+	border-radius: 3px;
+}
+
+.hot-product {
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	border-top: 0;
+}
+.hot-product h2 {
+	height: 30px;
+	line-height: 30px;
+	border-top: 2px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background-color: #ececec;
+}
+.hot-product h2 a {
+	display: block;
+	width: 100px;
+	text-align: center;
+	color: #32afff;
+	box-sizing: border-box;
+	border-top: 2px solid #ea5520;
+	background-color: #f9fbfa;
+}
+.hot-product ul {
+	margin-top: 10px;
+	overflow: hidden;
+}
+.hot-product ul li {
+	float: left;
+	width: 16.66%;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.hot-product-img,
+.hot-product-name {
+	display: block;
+}
+.hot-product-name {
+	height: 36px;
+	color: #333;
+}
+.hot-product-name:hover {
+	color: #ea5520;
+}
+.hot-product ul li span {
+	color: #ea5520;
+	font-weight: bold;
+}
+
+.product-detil-intro {
+	overflow: hidden;
+}
+.product-other {
+	float: left;
+	width: 210px;
+	margin-right: 22px;
+	margin-top: 10px;
+}
+.product-other-1,
+.product-other-2 {
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+}
+.product-other h4 {
+	padding-left: 10px;
+	height: 30px;
+	line-height: 30px;
+	color: #333;
+	background-color: #ececec;
+}
+.product-other-1 ul {
+	overflow: hidden;
+	margin-top: 10px;
+}
+.product-other-1 ul li {
+	float: left;
+	width: 50%;
+	margin-bottom: 10px;
+}
+.product-other-1 a {
+	margin-left: 10px;
+	color: #333;
+}
+.product-other-1 a:hover {
+	color: #ea5520;
+}
+.product-other-2 ul li {
+	text-align: center;
+	box-sizing: border-box;
+	margin-left:5px;
+	margin-right:5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #ccc;
+}
+.product-other-2 ul li.last {
+	border-bottom: 0;
+}
+.product-other-2 a {
+	display: block;
+	color: #333;
+}
+.product-other-2 a:hover {
+	color: #ea5520;
+}
+.product-other-2 span {
+	color: #ea5520;
+}
+.product-detail,
+.large-img,
+.tab,
+.text-words {
+	float: left;
+	width: 988px;
+}
+.product-detail {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #ccc;
+}
+.product-detail ul li {
+	float: left;
+}
+.product-detail-title {
+	height: 30px;
+	line-height: 30px;
+	background-color: #ececec;
+}
+.product-detail-title ul li {
+	width: 130px;
+	text-align: center;
+}
+.title-cur {
+	background-color: #f9fbfa;
+}
+.product-detail-title a {
+	color: #32afff;
+	font-weight: bold;
+}
+.product-detail-content {
+	display: none;
+}
+.disapper {
+	display: block;
+}
+.product-detail-content li {
+	width: 25%;
+	margin-top: 10px;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+.product-detail-content p {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.large-img {
+	margin-top: 10px;
+}
+.tab {
+	margin-top: 10px;
+	background-color: #ececec;
+	border: 1px solid #ccc;
+}
+.tab h3 {
+	display: inline-block;
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #32afff;
+	border-top: 2px solid #ea5520;
+	background-color: #f9fbfa;
+}
+.text-words {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1px solid #ccc;
+}
+.text-words p,
+.show-more {
+	margin-left: 20px;
+	line-height: 30px;
+	font-size: 16px;
+}
+.list p {
+	height: 300px;
+	/*width: 780px;*/
+	overflow: hidden;
+}
+.show-more a {
+	color: #333;
+}
+.show-more a:hover {
+	color: #ea5520;
+}
